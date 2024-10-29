@@ -102,6 +102,8 @@ jobs:
         sudo chmod +x /usr/bin/cosign
         sudo mv syft /usr/bin/syft
         sudo chmod +x /usr/bin/syft
+        sudo curl -sL https://github.com/enterprise-contract/ec-cli/releases/download/snapshot/ec_linux_amd64 -o /usr/local/bin/ec
+        sudo chmod +x /usr/local/bin/ec
         syft --version 
         cosign version
         buildah --version
